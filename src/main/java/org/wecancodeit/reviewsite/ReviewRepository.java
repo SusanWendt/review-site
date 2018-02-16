@@ -12,8 +12,8 @@ public class ReviewRepository {
 	private Map<Long, Review> reviews = new HashMap<>();
 
 	public ReviewRepository() {
-		Review kino = new Review(1L, "KinoYoga", "imageUrl", "reviewCategory", "content", "date", "description");
-		Review aBridges = new Review(2L, "Adell Bridges", "imageUrl", "reviewCategory", "content", "date", "description");
+		Review kino = new Review(1L, "KinoYoga", "./images/kino.jpg", "reviewCategory", "content", "date", "description");
+		Review aBridges = new Review(2L, "Adell Bridges", "./images/aBridges.jpg", "reviewCategory", "content", "date", "description");
 
 		reviews.put(kino.getId(), kino);
 		reviews.put(aBridges.getId(), aBridges);

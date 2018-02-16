@@ -14,10 +14,12 @@
 
 	<div th:each="review: ${reviews}">
 		<h2 th:text="${review.title}"></h2>
-		<h2 th:text="${review.imageUrl}"></h2>
+		
 		<!-- add appropriate image  -->
-		<img src="./images/kino.jpg" alt="I'm not pictured here" />
-		<img src="images/aBridges.jpg" alt="I'm not pictured here" />
+		<!-- <h2 th:text="${review.imageUrl}"></h2> -->
+		<img th:src="${review.imageUrl}" />
+		<!--<img src="./images/aBridges.jpg" alt="I'm not pictured here" /> -->
+		
 		<h2 th:text="${review.reviewCategory}"></h2>
 		<h2 th:text="${review.content}"></h2>
 		<h2 th:text="${review.date}"></h2>

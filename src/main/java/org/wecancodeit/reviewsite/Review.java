@@ -6,19 +6,19 @@ public class Review {
 	private String imageUrl;
 	private String reviewCategory;
 	private String content;
-	private String date;
+	private String insta;
 	private String description;
 	
 	
 
-	public Review(Long id, String title, String imageUrl, String reviewCategory, String content, String date,
+	public Review(Long id, String title, String imageUrl, String reviewCategory, String content, String insta,
 			String description) {
 		this.id = id;
 		this.title = title;
 		this.imageUrl = imageUrl;
 		this.reviewCategory = reviewCategory;
 		this.content = content;
-		this.date = date;
+		this.insta = insta;
 		this.description = description;
 	}
 
@@ -42,8 +42,8 @@ public class Review {
 		return content;
 	}
 
-	public String getDate() {
-		return date;
+	public String getInsta() {
+		return insta;
 	}
 
 	public String getDescription() {

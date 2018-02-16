@@ -9,20 +9,22 @@
 <body>
 
 	<header>
-		<h1> A Yoga Review </h1>
+		<h1>A Yoga Review</h1>
 	</header>
 
 	<div th:each="review: ${reviews}">
 		<h2 th:text="${review.title}"></h2>
-		
+
 		<!-- add appropriate image  -->
-		<!-- <h2 th:text="${review.imageUrl}"></h2> -->
-		<img th:src="${review.imageUrl}" />
-		<!--<img src="./images/aBridges.jpg" alt="I'm not pictured here" /> -->
-		
+		<img th:src="${review.imageUrl}" alt="I'm not pictured here" />
 		<h2 th:text="${review.reviewCategory}"></h2>
-		<h2 th:text="${review.content}"></h2>
-		<h2 th:text="${review.date}"></h2>
+		
+		<!-- add appropriate website link  -->
+		<h2> <a th:href="${review.content}">website</a></h2> 
+
+		<!-- add appropriate instagram link  -->
+		<h2> <a th:href="${review.insta}">instagram</a></h2>
+		
 		<h2 th:text="${review.description}"></h2>
 		<a href="http://localhost:8080/reviews">Back to home</a>
 	</div>

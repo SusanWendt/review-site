@@ -37,9 +37,9 @@ forwarding to a “reviews” template.
 [X] It should have a method mapped to a url including an id parameter that puts one of your reviews into the model, 
 forwarding to a “review” template. 
 [X] This method should expect an “id” query parameter in order to select a specific review.
-[] Place images you use into your src/main/resources/static/images folder and link to them there. 
+[X] Place images you use into your src/main/resources/static/images folder and link to them there. 
 		Example: if your image is in src/main/resources/static/images/foo.jpg, you would reference it in your application as /images/foo.jpg.
-[] Use your html/css-fu to style to your pages consistently and to make them appealing.
+[X] Use your html/css-fu to style to your pages consistently and to make them appealing.
 
 Grading
 [] apply necessary spring dependencies to project	10

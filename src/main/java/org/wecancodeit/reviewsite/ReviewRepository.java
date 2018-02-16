@@ -13,8 +13,10 @@ public class ReviewRepository {
 
 	public ReviewRepository() {
 		Review kino = new Review(1L, "KinoYoga", "imageUrl", "reviewCategory", "content", "date", "description");
+		Review aBridges = new Review(2L, "Adell Bridges", "imageUrl", "reviewCategory", "content", "date", "description");
 
 		reviews.put(kino.getId(), kino);
+		reviews.put(aBridges.getId(), aBridges);
 	}
 
 	public Review findOne(Long id) {

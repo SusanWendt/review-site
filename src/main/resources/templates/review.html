@@ -3,18 +3,21 @@
 <html xmlns:th="http://www.thymeleaf.org">
 
 <head>
-<title>A review</title>
+<title>yoga review</title>
 </head>
 
 <body>
 
 	<header>
-		<h1> A review </h1>
+		<h1> A Yoga Review </h1>
 	</header>
 
 	<div th:each="review: ${reviews}">
 		<h2 th:text="${review.title}"></h2>
 		<h2 th:text="${review.imageUrl}"></h2>
+		<!-- add appropriate image  -->
+		<img src="./images/kino.jpg" alt="I'm not pictured here" />
+		<img src="images/aBridges.jpg" alt="I'm not pictured here" />
 		<h2 th:text="${review.reviewCategory}"></h2>
 		<h2 th:text="${review.content}"></h2>
 		<h2 th:text="${review.date}"></h2>

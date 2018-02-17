@@ -7,26 +7,26 @@
 </head>
 
 <body>
+	<div th:each="review: ${reviews}">
 
 	<header>
-		<h1>A Yoga Review</h1>
+		<h1 th:text="${review.title} + ' Review'"></h1>
 	</header>
-
-	<div th:each="review: ${reviews}">
-		<h2 th:text="${review.title}"></h2>
-
-		<!-- add appropriate image  -->
+		<h2 th:text="${review.name}"></h2>
+		
 		<img th:src="${review.imageUrl}" alt="I'm not pictured here" />
-		<h2 th:text="${review.reviewCategory}"></h2>
 		
-		<!-- add appropriate website link  -->
-		<h2> <a th:href="${review.content}">website</a></h2> 
+		<h3 th:text="'Category: ' + ${review.reviewCategory}"></h3>
+		
+		 <a th:href="${review.website}"><h3 th:text="${review.name} + ' website'"></h3></a>
 
-		<!-- add appropriate instagram link  -->
-		<h2> <a th:href="${review.insta}">instagram</a></h2>
+		<a th:href="${review.insta}"><h3 th:text="${review.title} + ' Instagram'"></h3></a>	
 		
-		<h2 th:text="${review.description}"></h2>
+		<h3>Description: </h3>
+		<p th:text="${review.description}"></p>
+		
 		<a href="http://localhost:8080/reviews">Back to home</a>
+	
 	</div>
 
 </body>

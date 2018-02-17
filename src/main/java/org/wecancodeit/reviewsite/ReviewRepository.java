@@ -12,18 +12,36 @@ public class ReviewRepository {
 	private Map<Long, Review> reviews = new HashMap<>();
 
 	public ReviewRepository() {
-		Review demo = new Review(0L, "demo", "imageUrl", "reviewCategory", "content", "date", "description");
-		Review kino = new Review(1L, "KinoYoga", "./images/kino.jpg", "Ashtanga Yoga", "https://www.kinoyoga.com/",
-				"https://www.instagram.com/kinoyoga/?hl=en", "description");
-		Review aBridges = new Review(2L, "Adell Bridges", "./images/aBridges.jpg", "Vinyasa Yoga",
+		Review yogaJournal = new Review(0L, "Yoga Journal", "Yoga Journal", "./images/dogYoga.jpg", "Yoga Resource",
+				"https://www.yogajournal.com/yoga-101", "https://www.instagram.com/yogajournal/",
+				"Yoga Journal is a great resource for any question. I consider it an encyclopedia of sorts that references other articles. ");
+		Review kino = new Review(1L, "Kino Yoga", "Kino MacGregor", "./images/kino.jpg", "Ashtanga Yoga",
+				"https://www.kinoyoga.com/", "https://www.instagram.com/kinoyoga/?hl=en",
+				"Kino MacGregor is my number one yogi to follow. She incorpates the history, philosohpy, and more traditional lineages of yoga and makes them accesible to modern day wellness enthusiasts. Her style is ahstanga, which is a style developed by Sri K. Pattabhi Jois in the 20th century based around the eight limber bath of yoga decribed in the Yoga Sutras.");
+		Review aBridges = new Review(2L, "Adell Bridges Yoga", "Adell Bridges", "./images/aBridges.jpg", "Vinyasa Yoga",
 				"https://adellbridgesyoga.com/", "https://www.instagram.com/adellbridges/", "description");
-		Review dWerner = new Review(3L, "Dylan Werner", "./images/dWerner.jpg", "Power Yoga",
+		Review dWerner = new Review(3L, "Dylan Werner Yoga", "Dylan Werner", "./images/dWerner.jpg", "Power Yoga",
 				"https://www.dylanwerneryoga.com/", "https://www.instagram.com/dylanwerneryoga/", "description");
 
-		reviews.put(demo.getId(), demo);
+		Review corePower = new Review(4L, "CorePower Yoga", "CorePower", "./images/corePower.jpg", "Yoga Studio", "https://www.corepoweryoga.com/",
+				"https://www.instagram.com/corepoweryoga/?hl=en",
+				"This is a nationally branded yoga studio. Headquartered in Denver, Core Power has over 170 studios throughout the US. "
+				+ "Columbus houses two studios: one at the Easton Shoping Center and one in the Short North. "
+				+ "Benefits of joining this studio injclude that the membership is valid at all studios. "
+				+ "Another luxury is the fully equipped locker room including stocked showers, towels, mat rentals, among other amentities."
+				+ "All classes are hot (80+ degrees) and there are four types of calsses: C1, C2, HPF, and Sculpt. "
+				+ "C1: Core 1 is the most accesible class designed for beginners or a recovery day. "
+				+ "C2: Core 2 is targetted towards students who already have a developed yoga practice. "
+				+ "HPF: Hot Power Flow is the hottest class led in candlelight and incorpates more traditional yoga elements. "
+				+ "Sculpt is the most modern variation offered that utilizes weights within the flow for added difficulty. "
+				+ "Additionally there are various Workshops such as Arm Balance and Inversion, Restorative, Diwali, Solstice, Etc."
+				+ "The first week is free for new students.");
+
+		reviews.put(yogaJournal.getId(), yogaJournal);
 		reviews.put(kino.getId(), kino);
 		reviews.put(aBridges.getId(), aBridges);
 		reviews.put(dWerner.getId(), dWerner);
+		reviews.put(corePower.getId(), corePower);
 	}
 
 	public Review findOne(Long id) {

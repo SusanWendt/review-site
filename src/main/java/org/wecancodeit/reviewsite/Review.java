@@ -3,21 +3,21 @@ package org.wecancodeit.reviewsite;
 public class Review {
 	private Long id;
 	private String title;
+	private String name; 
 	private String imageUrl;
 	private String reviewCategory;
-	private String content;
+	private String website;
 	private String insta;
 	private String description;
-	
-	
 
-	public Review(Long id, String title, String imageUrl, String reviewCategory, String content, String insta,
+	public Review(Long id, String title, String name, String imageUrl, String reviewCategory, String website, String insta,
 			String description) {
 		this.id = id;
 		this.title = title;
+		this.name = name;
 		this.imageUrl = imageUrl;
 		this.reviewCategory = reviewCategory;
-		this.content = content;
+		this.website = website;
 		this.insta = insta;
 		this.description = description;
 	}
@@ -29,6 +29,10 @@ public class Review {
 	public String getTitle() {
 		return title;
 	}
+	
+	public String getName() {
+		return name;
+	}
 
 	public String getImageUrl() {
 		return imageUrl;
@@ -38,8 +42,8 @@ public class Review {
 		return reviewCategory;
 	}
 
-	public String getContent() {
-		return content;
+	public String getWebsite() {
+		return website;
 	}
 
 	public String getInsta() {

@@ -3,20 +3,23 @@
 <html xmlns:th="http://www.thymeleaf.org">
 
 <head>
-<title>Yoga reviews index</title>
+<title>Yoga reviews</title>
 </head>
 
-<body>
-	<header>
-		<h1>A List of Yoga Reviews</h1>
-	</header>
+	<body bgcolor="#F2D7D5">
 
-	<ul th:each="review: ${reviews}">
-		<li><a th:href="@{/review(id=${review.id})}"
-			th:text="${review.title}"></a> <span
-			th:text="': ' + ${review.description}" /></li>
-	</ul>
+		<header>
+			<h1>A List of Yoga Reviews</h1>
+		</header>
 
+		<ul th:each="review: ${reviews}">
+			<li>
+				<a th:href="@{/review(id=${review.id})}"
+				th:text="${review.title}"></a> 
+				<span th:text="': ' + ${review.reviewCategory}" />
+			</li>
+		</ul>
 
-</body>
+	</body>
+
 </html>

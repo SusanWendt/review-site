@@ -42,11 +42,12 @@ forwarding to a “review” template.
 [X] Use your html/css-fu to style to your pages consistently and to make them appealing.
 
 Grading
-[] apply necessary spring dependencies to project	10
-[] create a Review class with appropriate instance data and methods	10
-[] create a Repository class with proper annotations that appropriately builds out a map of data and necessary methods	10
-[] create a Controller class with proper annotations to accurately set up access to all reviews and allows access into one review	20
-[] create Thymeleaf templates that accurately display required information	20
-[] house and reference images from proper resource folder	10
+[] create a Review class with appropriate instance data and methods	13
+[] create a Repository class with proper annotations	12
+[] create a Controller class with proper annotations	20
+[] create Thymeleaf template for a single review	10
+[] create Thymeleaf template for all reviews	10
+[] house and reference images from proper resource folder	5
+[] Semantic HTML	10
 [] TDD	10
 [] Style/formatting/code quality	10

@@ -23,25 +23,30 @@ public class ReviewRepository {
 		Review dWerner = new Review(3L, "Dylan Werner Yoga", "Dylan Werner", "./images/dWerner.jpg", "Power Yoga",
 				"https://www.dylanwerneryoga.com/", "https://www.instagram.com/dylanwerneryoga/", "description");
 
-		Review corePower = new Review(4L, "CorePower Yoga", "CorePower", "./images/corePower.jpg", "Yoga Studio", "https://www.corepoweryoga.com/",
-				"https://www.instagram.com/corepoweryoga/?hl=en",
+		Review corePower = new Review(4L, "CorePower Yoga", "CorePower", "./images/corePower.jpg", "Yoga Studio",
+				"https://www.corepoweryoga.com/", "https://www.instagram.com/corepoweryoga/?hl=en",
 				"This is a nationally branded yoga studio. Headquartered in Denver, Core Power has over 170 studios throughout the US. "
-				+ "Columbus houses two studios: one at the Easton Shoping Center and one in the Short North. "
-				+ "Benefits of joining this studio injclude that the membership is valid at all studios. "
-				+ "Another luxury is the fully equipped locker room including stocked showers, towels, mat rentals, among other amentities."
-				+ "All classes are hot (80+ degrees) and there are four types of calsses: C1, C2, HPF, and Sculpt. "
-				+ "C1: Core 1 is the most accesible class designed for beginners or a recovery day. "
-				+ "C2: Core 2 is targetted towards students who already have a developed yoga practice. "
-				+ "HPF: Hot Power Flow is the hottest class led in candlelight and incorpates more traditional yoga elements. "
-				+ "Sculpt is the most modern variation offered that utilizes weights within the flow for added difficulty. "
-				+ "Additionally there are various Workshops such as Arm Balance and Inversion, Restorative, Diwali, Solstice, Etc."
-				+ "The first week is free for new students.");
+						+ "Columbus houses two studios: one at the Easton Shoping Center and one in the Short North. "
+						+ "Benefits of joining this studio injclude that the membership is valid at all studios. "
+						+ "Another luxury is the fully equipped locker room including stocked showers, towels, mat rentals, among other amentities."
+						+ "All classes are hot (80+ degrees) and there are four types of calsses: C1, C2, HPF, and Sculpt. "
+						+ "C1: Core 1 is the most accesible class designed for beginners or a recovery day. "
+						+ "C2: Core 2 is targetted towards students who already have a developed yoga practice. "
+						+ "HPF: Hot Power Flow is the hottest class led in candlelight and incorpates more traditional yoga elements. "
+						+ "Sculpt is the most modern variation offered that utilizes weights within the flow for added difficulty. "
+						+ "Additionally there are various Workshops such as Arm Balance and Inversion, Restorative, Diwali, Solstice, Etc."
+						+ "The first week is free for new students.");
+
+		Review yohi = new Review(5L, "Yoga on High", "YOHI", "./images/yohi.jpg", "Yoga Studio",
+				"http://yogaonhigh.com/", "https://www.instagram.com/yogaonhigh/",
+				"This yoga studio is where I did my teacher training. It has three different location and is the most comprehensive studio in columbus, offering Vinyasa, Hatha, Ashtanga, Mysore, Restorative, Maternity, Kids yoga, free community yoga, and many more.");
 
 		reviews.put(yogaJournal.getId(), yogaJournal);
 		reviews.put(kino.getId(), kino);
 		reviews.put(aBridges.getId(), aBridges);
 		reviews.put(dWerner.getId(), dWerner);
 		reviews.put(corePower.getId(), corePower);
+		reviews.put(yohi.getId(), yohi); 
 	}
 
 	public Review findOne(Long id) {

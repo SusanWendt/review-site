@@ -9,24 +9,25 @@
 <body>
 	<div th:each="review: ${reviews}">
 
-	<header>
-		<h1 th:text="${review.title} + ' Review'"></h1>
-	</header>
+		<header>
+			<h1 th:text="${review.title} + ' Review'"></h1>
+		</header>
 		<h2 th:text="${review.name}"></h2>
-		
-		<img th:src="${review.imageUrl}" alt="I'm not pictured here" />
-		
-		<h3 th:text="'Category: ' + ${review.reviewCategory}"></h3>
-		
-		 <a th:href="${review.website}"><h3 th:text="${review.name} + ' website'"></h3></a>
 
-		<a th:href="${review.insta}"><h3 th:text="${review.title} + ' Instagram'"></h3></a>	
-		
-		<h3>Description: </h3>
+		<img th:src="${review.imageUrl}" alt="I'm not pictured here" />
+
+		<h3 th:text="'Category: ' + ${review.reviewCategory}"></h3>
+
+		<a th:href="${review.website}"><h3
+				th:text="${review.name} + ' website'"></h3></a> <a
+			th:href="${review.insta}"><h3
+				th:text="${review.title} + ' Instagram'"></h3></a>
+
+		<h3>Description:</h3>
 		<p th:text="${review.description}"></p>
-		
+
 		<a href="http://localhost:8080/reviews">Back to home</a>
-	
+
 	</div>
 
 </body>

@@ -46,7 +46,9 @@ public class ReviewRepository {
 
 		Review yohi = new Review(5L, "Yoga on High", "YOHI", "./images/yohi.jpg", "Yoga Studio",
 				"http://yogaonhigh.com/", "https://www.instagram.com/yogaonhigh/",
-				"This yoga studio is where I did my teacher training. It has three different location and is the most comprehensive studio in columbus, offering Vinyasa, Hatha, Ashtanga, Mysore, Restorative, Maternity, Kids yoga, free community yoga, and many more.");
+				"This yoga studio is where I did my teacher training. "
+				+ "It has three different locations and is the most comprehensive studio in Columbus, "
+				+ "offering Vinyasa, Hatha, Ashtanga, Mysore, Restorative, Maternity, Kids yoga, free community yoga, and many more.");
 
 		reviews.put(yogaJournal.getId(), yogaJournal);
 		reviews.put(kino.getId(), kino);

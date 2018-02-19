@@ -3,15 +3,15 @@ package org.wecancodeit.reviewsite;
 public class Review {
 	private Long id;
 	private String title;
-	private String name; 
+	private String name;
 	private String imageUrl;
 	private String reviewCategory;
 	private String website;
 	private String insta;
 	private String description;
 
-	public Review(Long id, String title, String name, String imageUrl, String reviewCategory, String website, String insta,
-			String description) {
+	public Review(Long id, String title, String name, String imageUrl, String reviewCategory, String website,
+			String insta, String description) {
 		this.id = id;
 		this.title = title;
 		this.name = name;
@@ -29,7 +29,7 @@ public class Review {
 	public String getTitle() {
 		return title;
 	}
-	
+
 	public String getName() {
 		return name;
 	}

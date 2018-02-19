@@ -18,17 +18,17 @@ public class ReviewRepository {
 		Review kino = new Review(1L, "Kino Yoga", "Kino MacGregor", "./images/kino.jpg", "Ashtanga Yoga",
 				"https://www.kinoyoga.com/", "https://www.instagram.com/kinoyoga/?hl=en",
 				"Kino MacGregor is my number one yogi to follow. "
-				+ "She incorpates the history, philosohpy, and more traditional lineages of yoga and makes them accesible to modern day wellness enthusiasts. "
-				+ "Her style is ahstanga, which is a style developed by Sri K. Pattabhi Jois in the 20th century based around the eight limbed bath of yoga decribed in the Yoga Sutras.");
+						+ "She incorpates the history, philosohpy, and more traditional lineages of yoga and makes them accesible to modern day wellness enthusiasts. "
+						+ "Her style is ahstanga, which is a style developed by Sri K. Pattabhi Jois in the 20th century based around the eight limbed bath of yoga decribed in the Yoga Sutras.");
 		Review aBridges = new Review(2L, "Adell Bridges Yoga", "Adell Bridges", "./images/aBridges.jpg", "Vinyasa Yoga",
 				"https://adellbridgesyoga.com/", "https://www.instagram.com/adellbridges/",
 				"Adell Bridges is newer to teaching yoga, but she has a strong understanding of alignment and body awareness. "
-				+ "So her description of poses and correcting alignment are spot on. "
-				+ "Her skill in this augmented from her background as a competive gymnast.");
+						+ "So her description of poses and correcting alignment are spot on. "
+						+ "Her skill in this augmented from her background as a competive gymnast.");
 		Review dWerner = new Review(3L, "Dylan Werner Yoga", "Dylan Werner", "./images/dWerner.jpg", "Power Yoga",
 				"https://www.dylanwerneryoga.com/", "https://www.instagram.com/dylanwerneryoga/",
 				"Dylan Werner practices vinyasa style yoga, primarily power and some Yin. "
-				+ "He has a successful cody app online and travels most of the year.");
+						+ "He has a successful cody app online and travels most of the year.");
 
 		Review corePower = new Review(4L, "CorePower Yoga", "CorePower", "./images/corePower.jpg", "Yoga Studio",
 				"https://www.corepoweryoga.com/", "https://www.instagram.com/corepoweryoga/?hl=en",
@@ -47,8 +47,8 @@ public class ReviewRepository {
 		Review yohi = new Review(5L, "Yoga on High", "YOHI", "./images/yohi.jpg", "Yoga Studio",
 				"http://yogaonhigh.com/", "https://www.instagram.com/yogaonhigh/",
 				"This yoga studio is where I did my teacher training. "
-				+ "It has three different locations and is the most comprehensive studio in Columbus, "
-				+ "offering Vinyasa, Hatha, Ashtanga, Mysore, Restorative, Maternity, Kids yoga, free community yoga, and many more.");
+						+ "It has three different locations and is the most comprehensive studio in Columbus, "
+						+ "offering Vinyasa, Hatha, Ashtanga, Mysore, Restorative, Maternity, Kids yoga, free community yoga, and many more.");
 
 		reviews.put(yogaJournal.getId(), yogaJournal);
 		reviews.put(kino.getId(), kino);

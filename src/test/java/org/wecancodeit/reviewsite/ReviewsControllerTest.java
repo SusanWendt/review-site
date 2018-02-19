@@ -51,17 +51,18 @@ public class ReviewsControllerTest {
 		String result = underTest.getAReview(REVIEW_ID, model);
 		assertThat(result, is("review"));
 	}
-	
+
 	@Test
 	public void shouldAddAllReviewsToModel() {
 		Collection<Review> allReviews = Arrays.asList(review, anotherReview);
-		when(repository.findAll()).thenReturn(allReviews);		
+		when(repository.findAll()).thenReturn(allReviews);
 		underTest.getAllReviews(model);
 		verify(model).addAttribute("reviews", allReviews);
 	}
-	
+
 	@Test
 	public void shouldReturnNameOfAllReviewsTemplate() {
 		String result = underTest.getAllReviews(model);
-		assertThat(result, is("reviews"));	}
+		assertThat(result, is("reviews"));
+	}
 }

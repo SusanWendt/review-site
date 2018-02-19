@@ -6,20 +6,18 @@
 <title>Yoga reviews</title>
 </head>
 
-	<body bgcolor="#F2D7D5">
+<body bgcolor="#F2D7D5">
 
-		<header>
-			<h1>A List of Yoga Reviews</h1>
-		</header>
+	<header>
+		<h1>A List of Yoga Reviews</h1>
+	</header>
 
-		<ul th:each="review: ${reviews}">
-			<li>
-				<a th:href="@{/review(id=${review.id})}"
-				th:text="${review.title}"></a> 
-				<span th:text="': ' + ${review.reviewCategory}" />
-			</li>
-		</ul>
+	<ul th:each="review: ${reviews}">
+		<li><a th:href="@{/review(id=${review.id})}"
+			th:text="${review.title}"></a> <span
+			th:text="': ' + ${review.reviewCategory}" /></li>
+	</ul>
 
-	</body>
+</body>
 
 </html>
